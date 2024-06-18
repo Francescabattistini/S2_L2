@@ -99,13 +99,10 @@ if (totalShoppingCart > 50) {
 console.log("ESERCIZIO 7");
 
 let caso1 = 1;
-3;
 
 let caso2 = 3;
-2;
 
 let caso3 = 2;
-1;
 
 if (caso1 <= caso2 && caso2 <= caso3) {
   /* parte1 , 123 */
