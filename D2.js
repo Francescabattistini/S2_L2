@@ -78,16 +78,16 @@ if (totalShoppingCart > 50) {
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 console.log("ESERCIZIO 6");
-
-let scontoBlackFriday = totalShoppingCart * 0.8;
+let discont = 0.2;
+totalShoppingCart = totalShoppingCart * (1 - discont);
 
 if (totalShoppingCart > 50) {
   console.log("complimenti hai la spedizione gratuita");
-  console.log("il valore del tuo carrello è ", scontoBlackFriday + "€");
+  console.log("il valore del tuo carrello è ", totalShoppingCart + "€");
 } else {
   console.log(
     "il valore del tuo carrello è ",
-    scontoBlackFriday + Shipping + "€"
+    totalShoppingCart + Shipping + "€"
   );
 }
 
@@ -119,7 +119,7 @@ if (caso1 <= caso2 && caso2 <= caso3) {
 } else if (caso3 >= caso1 && caso2 >= caso3) {
   console.log("eccolo6", caso2, caso3, caso1);
 }
-/* parte 5 , 132 */
+/* parte 6 , 132 */
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
