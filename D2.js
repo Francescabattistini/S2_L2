@@ -132,6 +132,8 @@ console.log("ESERCIZIO 9");
 const numero = 10;
 if (numero % 2 === 0) {
   console.log("il numero è divisibile per 2");
+} else {
+  console.log("questo numero non è divisibile per 2");
 }
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
@@ -146,6 +148,14 @@ if (numero % 2 === 0) {
 */
 
 console.log("ESERCIZIO 10");
+let val = 9;
+if (val <= 5) {
+  console.log("il valore è meno di 5");
+} else if (val < 10) {
+  console.log("Meno di 10");
+} else {
+  console.log("Uguale a 10 o maggiore");
+}
 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
@@ -158,27 +168,38 @@ const me = {
 };
 
 console.log("ESERCIZIO 11");
+me.city = "Roma";
+console.log(me);
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
 console.log("ESERCIZIO 12");
-
+delete me.lastName;
+console.log(me);
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
-
+console.log("prima di pop le skill di me erano:", me.skills);
 console.log("ESERCIZIO 13");
+me.skills.pop();
+console.log("dopo pop le skill sono:", me.skills);
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
 console.log("ESERCIZIO 14");
+const arr = [];
 
+arr.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+console.log(arr);
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
-
 console.log("ESERCIZIO 15");
+arr.pop(10);
+console.log(arr);
+arr.push(100);
+console.log(arr);
