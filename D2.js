@@ -97,22 +97,32 @@ if (totalShoppingCart > 50) {
   Alla fine mostra il risultato in console.
 */
 console.log("ESERCIZIO 7");
-let x = 1;
-let y = 3;
-let w = 2;
 
-if (x <= y && y <= w) {
-  console.log("eccolo1", x, y, w);
-} else if (y <= w && w <= x) {
-  console.log("eccolo2", x, w, y);
-} else if (w <= x && x <= y) {
-  console.log("eccolo3", y, x, w);
-} else if (x <= w && w <= y) {
-  console.log("eccolo4", y, w, x);
-} else if (x >= y && y <= w) {
-  console.log("eccolo5", w, y, x);
+let caso1 = 1;
+3;
+
+let caso2 = 3;
+2;
+
+let caso3 = 2;
+1;
+
+if (caso1 <= caso2 && caso2 <= caso3) {
+  /* parte1 , 123 */
+  console.log("eccolo1", caso3, caso2, caso1);
+} else if (caso2 <= caso3 && caso3 <= caso1) {
+  /* parte 2 , 312 */
+  console.log("eccolo2", caso1, caso3, caso2);
+} else if (caso3 <= caso1 && caso1 <= caso2) {
+  console.log("eccolo3", caso2, caso1, caso3); /* parte 3 , 231 */
+} else if (caso1 >= caso2 && caso2 <= caso3) {
+  console.log("eccolo4", caso3, caso1, caso2); /* parte 4 , 213 */
+} else if (caso1 >= caso3 && caso2 >= caso3) {
+  console.log("eccolo5", caso1, caso2, caso3); /* parte 5 , 321 */
+} else if (caso3 >= caso1 && caso2 >= caso3) {
+  console.log("eccolo6", caso2, caso3, caso1);
 }
-
+/* parte 5 , 132 */
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
